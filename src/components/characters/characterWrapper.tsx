@@ -1,10 +1,10 @@
 import React from 'react'
 import Character from './Character'
-import Spinner from '../views/PortalLoader'
+import PortalLoader from '../views/PortalLoader'
 
 const CharacterWrapper = ({ items, isLoading }) => {
   return isLoading ? (
-    <Spinner />
+    <PortalLoader />
   ) : (
     <section className='cards'>
       {items.map((item) => (
