@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Character = ({ item }) => {
+const Character = ({ item }:{ item: any}) => {
   return (
     <div className='card'>
       <div className='card-inner'>
