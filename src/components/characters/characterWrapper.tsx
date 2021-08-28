@@ -1,5 +1,5 @@
 import React from 'react'
-import Character from './Character'
+import Character from './character'
 import PortalLoader from '../views/PortalLoader'
 
 const CharacterWrapper = ({ items, isLoading }:{ items: any[],isLoading: boolean}) => {
@@ -8,7 +8,7 @@ const CharacterWrapper = ({ items, isLoading }:{ items: any[],isLoading: boolean
   ) : (
     <section className='cards'>
       {items.map((item) => (
-        <Character key={item.char_id} item={item}></Character>
+        <Character key={item.char_id} item={item}/>
       ))}
     </section>
   )
